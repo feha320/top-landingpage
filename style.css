@@ -3,7 +3,12 @@ body {
   flex-direction: column;
   font-family: Roboto, sans-serif;
   background-color: black;
+  margin: auto;
   align-items: center;
+}
+
+.main-page {
+  width: 1400px;
 }
 
 /* Navbar */
@@ -13,17 +18,23 @@ body {
   flex-direction: column;
   /*align-items: center;*/
   border: 2px solid red;
-  background: darkgray;
+  background: #1f2937;
 }
 
 .navbar {
   display: flex;
   border: 2px solid red;
+  justify-content: space-between;
 }
 
 .nav-links {
   display: flex;
   list-style: none;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20px;
+  font-size: 18px;
+  color: #E5E7EB;
 }
 
 .navbar img {
@@ -31,13 +42,18 @@ body {
   width: auto;
 }
 
+.info-text {
+  color: #F9FAF8;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: extra-bold;
+}
+
 .hero-section {
   display: flex;
   border: 3px solid blue;
-}
-
-.info-text {
-
 }
 
 .hero-section img {
@@ -48,7 +64,24 @@ body {
 a:link,
 a:visited {
   text-decoration: none;
-  color:antiquewhite;
+  color: #E5E7EB;
 }
 
 
+/* Mainpage - Second Section */
+
+.main-section-two {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 3px solid green;
+}
+
+.img-group {
+  display: flex;
+}
+
+.img-text {
+  display: flex;
+  flex-direction: column;
+}
