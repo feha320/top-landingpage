@@ -8,7 +8,10 @@ body {
 }
 
 .main-page {
-  width: 1400px;
+  display: flex;
+  flex-direction: column;
+  max-width: 1400px;
+  margin: auto;
 }
 
 /* Navbar */
@@ -75,13 +78,24 @@ a:visited {
     flex-direction: column;
     background-color: white;
     border: 3px solid green;
+    align-items: center;
 }
 
 .img-group {
   display: flex;
+  width: auto;
+  border: 3px solid blue;
 }
 
 .img-text {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  max-width: fit-content;
+  border: 3px solid blue;
+}
+
+.img-text img {
+  width: 200px;
+  height: auto;
 }
